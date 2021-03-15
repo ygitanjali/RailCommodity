@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .main_div {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .box {
+            width: 650px;
+            height: 550px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0.5px 1px 6px rgba(0, 0, 0, 0.12), 0px 1px 4px rgba(0, 0, 0, 0.24);
+            border-radius: 10px;
+        }
+
+        .box h1 {
+            margin-bottom: 30px;
+            color: #fff;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .box .inputBox {
+            position: relative;
+        }
+
+        .box .inputBox input {
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            color: #fff;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+        }
+
+        .box #collect {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            background: #03a9f4;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+
+        span {
+            color: #fff;
+        }
+    </style>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="box">
+            <h1>Registration Form</h1>
+            <form action="/registration" method="POST">
+                <div class="row register-form">
+                    <div class="col-md-6">
+                        <div class="form-group inputBox">
+                            <input type="text" class="form-control" placeholder="First Name*" value="" name="firstName">
+                        </div>
+                        <div class="form-group inputBox">
+                            <input type="text" class="form-control" placeholder="Your Email*" value="" name="email">
+                        </div>
+                        <div class="form-group inputBox">
+                            <input type="text" minlength="10" maxlength="10" class="form-control"
+                                placeholder="Your Phone*" value="" name="phoneNo">
+                        </div>
+                        <div class="form-group inputBox">
+                            <input type="password" class="form-control" placeholder="Password *" value=""
+                                name="password">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group inputBox">
+                            <input type="text" class="form-control" placeholder="Last Name*" value="" name="lastName">
+                        </div>
+                        <div class="form-group inputBox">
+                            <div class="maxl">
+                                <label class="radio online">
+                                    <input type="radio" name="gender" value="male">
+                                    <span>Male</span>
+                                </label>
+                                <label class="radio online">
+                                    <input type="radio" name="gender" value="female" checked>
+                                    <span>Female</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group inputBox">
+                            <input type="text" class="form-control" placeholder="Your Age*" value="" name="age">
+                        </div>
+                        <div class="form-group inputBox">
+                            <input type="password" class="form-control" placeholder="Conform Password *" value=""
+                                name="conformPassword">
+                        </div>
+                        <input type="submit" class="btnRegister" value="Register" id="collect">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
